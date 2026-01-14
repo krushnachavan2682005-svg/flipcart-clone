@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#display{
+    height: 500px;
+    background-color: aliceblue;
+    width: 500px;
+}
+
+
+
+.custom-select {
+    position: relative;
+    width: 250px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.options {
+    display: none;
+    list-style: none ;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    
+}
+.options li {
+    padding: 10px;
+}
+.options li:hover {
+    background: #eee;
+}
+.custom-select.open .options {
+    display: block;
+}
+body{
+    font-size: medium;
+
+}
+@keyframes slide {
+    header {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+}
